@@ -70,7 +70,7 @@ body {
 
 }
 
-#button4 {
+.btnLogin {
 
     background: black;
     margin-left: 5%;
@@ -85,7 +85,7 @@ body {
 
 }
 
-#button4:hover {
+.btnLogin:hover {
     background: #282F3D;
     margin-left: 5%;
     margin-right: 60px;
