@@ -29,8 +29,8 @@ body {
     margin-left: 10%;
     text-align: left;
     /*border: 2px red solid;*/
-    flex: 10%;
-    font-size: 70px;
+    flex: 0 0 auto;
+    font-size: 3.5rem;
     font: bold;
     font-family: "Love Light", cursive;
 }
@@ -38,8 +38,8 @@ body {
 .menu {
     text-shadow: 4px 3px 7px;
     flex-grow: 1;
-    font-size: 35px;
-    flex: 60%;
+    font-size: 1.5rem;
+    flex: 1 1 auto;
     /*border: 2px red solid;*/
     text-align: end;
     padding-bottom: 34px;
@@ -52,7 +52,7 @@ body {
 .menu a {
 
     margin-left: 60px;
-    font-size: 25px;
+    font-size: 1rem;
     text-decoration: none;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -105,7 +105,7 @@ body {
     flex-flow: row wrap;
     text-align: left;
     align-items: center;
-    height: 690px;
+    min-height: 60vh;
     background-color: #282F3D;
 }
 
@@ -155,7 +155,7 @@ section {
     margin-right: 5%;
     padding: 5%;
     text-align: center;
-    height: 400px;
+    height: auto;
     width: 90%;
 }
 
@@ -172,14 +172,100 @@ section h2 {
     display: flex;
     margin-top: 5%;
     justify-content: center;
+    gap: 1%;
 }
 
 .card {
-    display: inline-block;
-    width: 30%;
+    display: block;
+    flex: 1 1 30%;
+    box-sizing: border-box;
     padding: 20px;
     margin: 1%;
     border: 1px solid red;
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: bold;
+}
+
+/* Responsive helpers */
+img,
+picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin-left: 0;
+        font-size: 2.5rem;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .menu {
+        order: 2;
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .menu a {
+        margin: 0 .4rem;
+        display: inline-block;
+        padding: .5rem .8rem;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+
+    .headline,
+    .img-headline {
+        flex: 1 1 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .img-headline img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 3% 5%;
+    }
+
+    .serviços {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .menu a {
+        font-size: .95rem;
+        padding: .4rem .6rem;
+    }
+
+    .headline h2 {
+        font-size: 1.6rem !important;
+        letter-spacing: normal !important;
+    }
 }
