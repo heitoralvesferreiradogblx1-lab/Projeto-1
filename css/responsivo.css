@@ -1,0 +1,43 @@
+@media screen and (max-width: 1340px) {
+    .logo {
+        display: block;
+        margin-left: 15px;
+    }
+
+}
+
+@media screen and (max-width: 1390px) {
+
+    .logo {
+        border: 2px solid red;
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .headline {
+        margin-left: 5%;
+    }
+}
+
+
+@media screen and (max-width: 1658px) {
+    .serviços div {
+        overflow-y: auto;
+
+        height: 280px;
+        padding: 20px;
+        overflow-y: auto;
+
+        /* Firefox */
+        scrollbar-width: 1px;
+
+        /* Evita layout quebrar */
+        scrollbar-gutter: stable;
+    }
+
+    /* Chrome, Edge, Safari */
+    .serviços div::-webkit-scrollbar {
+        display: flex;
+    }
+
+}
