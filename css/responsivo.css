@@ -67,6 +67,18 @@
     }
 }
 
+@media screen and (max-width: 1535px) {
+    .headline {
+        margin-left: 5%;
+        flex: 45%;
+    }
+
+    .img-headline {
+        margin-right: 5%;
+        flex: 45%;
+    }
+}
+
 
 
 @media screen and (max-width: 1658px) {
