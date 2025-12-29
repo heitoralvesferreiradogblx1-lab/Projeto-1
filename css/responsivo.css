@@ -4,14 +4,12 @@
         width: 100%;
         padding: 20px;
         margin: 5% auto;
+        margin-top: 2%;
         font-weight: bold;
     }
 
-    .height {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-
+    .img-headline {
+        display: none;
     }
 }
 
