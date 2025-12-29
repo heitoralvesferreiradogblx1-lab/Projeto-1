@@ -7,7 +7,6 @@
 
 
 body {
-
     margin: 0;
     font-family: "Roboto", sans-serif;
     background-color: white;
@@ -235,4 +234,14 @@ section h2 {
     border-radius: 16px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.linha-centro {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100vh;
+    background-color: black;
+    transform: translateX(-50%);
 }
